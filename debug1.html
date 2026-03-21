@@ -1,11 +1,81 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<!-- ANTES -->
+<script>
+    function verificarAprovacao(n1,n2,n3){
+        let media = n1 + n2 + n3 / 3;
+        if(media >= 7 ) {
+            return "Aprovado com média: " + media;
+        }
+        else{
+            return "Reprovado com média: " + media;
+        }
+    }
+</script>
+
+ <!-- DEPOIS -->
+<script>
+    function verificarAprovacao(n1,n2,n3){
+        let media = (n1 + n2 + n3) / 3;
+        if(media >= 7 ) {
+            return "Aprovado com média: " + media;
+        }
+        else{
+            return "Reprovado com média: " + media;
+        }
+    }
+</script>
+
+
+
+<!-- ANTES -->
+<script>
+    function verificarAdolescente_antes(idade){
+        if (idade >= 13 || idade <= 17){
+            return "Adolescente";
+        }
+
+        return "Outra Categoria";
+    }
+</script>
+
+
+<!-- DEPOIS -->
+<script>
+    function verificarAdolescente_depois(idade){
+        if (idade >= 13 && idade <= 17){
+            return "Adolescente";
+        }
+        return "Outra Categoria";
+        
+    }
+</script>
+
+
+
+<!-- ANTES -->
+<script>
+    function maiordetresantes(a,b,c){
+        if (a>= b || a >= c) {
+            return a;
+        } else if(b>=a || b>=c){
+            return b;
+        } else {
+            return C;
+        }
+    }
+</script>
+
+
+<!-- DEPOIS -->
+<script>
+    function maiordetresdepois(a, b, c){
+        if (a>= b && a >= c) {
+            return a;
+        } else if(b>=a && b>=c){
+            return b;
+        } else {
+            return c;
+        }
+    }
+</script>
+
+
