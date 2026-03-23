@@ -79,3 +79,34 @@
 </script>
 
 
+
+<!-- ANTES -->
+<script>
+
+    function calcularFatorial(n) {
+        let fatorial = 0;
+
+        for (let i= 1; i <= n; i++){
+            fatorial = fatorial * i;
+        }
+
+        return fatorial;
+    }
+
+</script>
+
+
+<!-- DEPOIS -->
+<script>
+
+    function calcularFatorial(n) {
+        let fatorial = 1;
+
+        for (let i= 1; i <= n; i++){
+            fatorial = fatorial * i;
+        }
+
+        return fatorial;
+    }
+
+</script>
